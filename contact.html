@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1" style="border-top: solid 4px #000;">
+                <img src="images/logo.png" weight="50px" height="700px">
+            </div>
+            <div class="col-sm-11" >
+                <div class="header">
+                    <div class="topnav">
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</button>
+                        <a href="news.html">NEWS</a>
+                        <a href="magnus.html">MAGNUS</a>
+                        <a href="play.html">PLAY</a>
+                        <a href="train.html">TRAIN</a>
+
+                        <div id="id01" class="modal">
+                          
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                              <img src="images/avatar.png" alt="Avatar" class="avatar">
+                            </div>
+                        
+                            <div class="fcontainer" style="background-color:#f1f1f1">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                            
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                    
+                                <button type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                                <span class="psw">
+                                <a href="#">Forgot password?</a></span>
+                            </div>
+                          </form>
+                        </div>
+                        
+                        <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                        </script>                          
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="col-sm-7"style="border-left: solid 1px #000 ;">
+                        <div class="left_container">
+                            <h1>The Beth Harmon Club</h1>
+                            <div class="row3">
+                                <div class="col-sm-7">
+                                    <div class="main_menu">
+                                        <a href="index.html">HOME</a>
+                                        <a href="coach.html">COACH</a>
+                                        <a href="bio.html">BIO</a>
+                                        <a href="statistics.html">STATISTICS</a>
+                                        <a href="schedule.html">SCHEDULE</a>
+                                        <a href="contact.html">CONTACT</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="contact" class="contact-us section">
+                                  <div class="row">
+                                    <div class="col-lg-7">
+                                      <div class="section-heading">
+                                        <h2>Feel free to <em>Contact</em> us via the <span>HTML form</span></h2>
+                                        <div id="map">
+                                          <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                                        </div>
+                                        <div class="info">
+                                          <span><i class="fa fa-phone"></i> <a href="#">010-020-0340<br>090-080-0760</a></span>
+                                          <span><i class="fa fa-envelope"></i> <a href="#">info@company.com<br>mail@company.com</a></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-5 align-self-center">
+                                      <form id="contact" action="" method="get">
+                                        <div class="row">
+                                          <div class="col-lg-12">
+                                            <fieldset>
+                                              <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                                            </fieldset>
+                                          </div>
+                                          <div class="col-lg-12">
+                                            <fieldset>
+                                              <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                                            </fieldset>
+                                          </div>
+                                          <div class="col-lg-12">
+                                            <fieldset>
+                                              <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                                            </fieldset>
+                                          </div>
+                                          <div class="col-lg-12">
+                                            <fieldset>
+                                              <input type="text" name="website" id="website" placeholder="Your Website URL" required="">
+                                            </fieldset>
+                                          </div>
+                                          <div class="col-lg-12">
+                                            <fieldset>
+                                              <button type="submit" id="form-submit" class="main-button">Submit Request</button>
+                                            </fieldset>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="right_container">      
+                        <div class="col-sm-4">
+                            <img src="images/beth.png" width="450" height="400" >
+                            <div class="rightrow1">
+                                <div class="col-sm-4" style="border-left: solid 1px #000 ;" >
+                                    <p>"Without The Element Of Enjoyment, It Is Not Worth Trying To Excel At Anything."</p>
+                                </div>
+                            </div>
+                            <div class="rightrow2" style="width: 100%;">
+                                <div class="col-sm-12" style="border-left: solid 1px #000 ;">
+                                    <div class="social_link">
+                                        <a href="https://www.facebook.com/thebethharmonclub" class="fa fa-facebook"></a>
+                                        <a href="https://twitter.com/bethharmonclub" class="fa fa-twitter"></a>
+                                        <a href="https://www.instagram.com/thebethharmonclub/" class="fa fa-instagram"></a>
+                                        <a href="#" class="fa fa-youtube"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rightrow3">
+                                <div class="col-sm-8" style="border-left: solid 1px #000 ;">
+                                    <div class="follow">
+                                    <h4>Follow Us</h4>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
